@@ -1,0 +1,32 @@
+@import '../../assets/styles/variables';
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+}
+
+h1{
+    color: $color1;
+    font-size: 2.8rem;
+    font-family: $marker;
+}
+a{
+    color: $color1;
+    font-size: 1.8rem;
+}
+
+.menu{
+    height: 50px;
+    width: 50px;
+    align-self: flex-end;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
