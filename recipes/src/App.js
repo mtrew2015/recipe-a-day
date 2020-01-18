@@ -22,7 +22,6 @@ function App() {
             <Route path="/recipes/:id">
                 <Recipe />
             </Route> 
-			<p>Recipe App </p>
 		</div>
 	);
 }
