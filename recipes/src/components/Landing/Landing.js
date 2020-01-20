@@ -20,8 +20,10 @@ function Landing(props) {
 				</Link>
             )}
 			<div className="categories">
-
-
+				{categories.map(item => {
+				return <div className="category" value={item}>{item}</div>
+				})
+			}
 			</div>
 		</div>
 	);
