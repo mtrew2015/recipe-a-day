@@ -1,13 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Recipe from '../Recipe/Recipe.js';
 import RecipeCard from '../RecipeCard/RecipeCard';
 import './Landing.scss';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 function Landing(props) {
+	let categories = ["Beef", "Breakfast", "Chicken", "Dessert", "Misc", "Pasta", "Pork", "Seafood", "Sides", "Starter", "Vegan", "Vegetarian"]
 	console.log(props);
 	const { recipe } = props;
-	useEffect(() => {}, []);
+	
 	return (
 		<div className='container'>
 			{recipe && (
@@ -17,6 +19,10 @@ function Landing(props) {
 
 				</Link>
             )}
+			<div className="categories">
+
+
+			</div>
 		</div>
 	);
 }
